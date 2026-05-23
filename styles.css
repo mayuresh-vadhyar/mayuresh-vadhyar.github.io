@@ -157,6 +157,75 @@ select {
   border: 1px solid rgba(148, 163, 184, 0.12);
 }
 
+.tech-marquee {
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  overflow: hidden;
+  border-radius: 32px;
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.tech-marquee__inner {
+  display: flex;
+  gap: 0;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+
+.tech-marquee__track {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  padding: 1rem;
+  gap: 0.75rem;
+  /* background: rgba(79, 70, 229, 0.12);
+  border: 1px solid rgba(79, 70, 229, 0.18); */
+  border-radius: 24px;
+  text-align: center;
+}
+
+.tech-icon {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+}
+
+.tech-label {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.tech-label span {
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.tech-label small {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .section {
   padding: 5rem 1.5rem;
 }
