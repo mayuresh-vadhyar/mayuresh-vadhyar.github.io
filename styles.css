@@ -251,7 +251,7 @@ select {
 
 .content-grid,
 .skill-grid,
-.contact-grid {
+.profile-grid {
   display: grid;
   gap: 1.5rem;
 }
@@ -261,7 +261,7 @@ select {
 }
 
 .card,
-.contact-card,
+.profile-card,
 .timeline-item {
   background: rgba(15, 23, 42, 0.88);
   border: 1px solid rgba(148, 163, 184, 0.08);
@@ -271,7 +271,7 @@ select {
 
 .card h3,
 .timeline-item h3,
-.contact-card h3 {
+.profile-card h3 {
   margin-top: 0;
 }
 
@@ -320,7 +320,7 @@ select {
   font-weight: 600;
 }
 
-.contact-grid {
+.profile-grid {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
