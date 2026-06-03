@@ -115,6 +115,10 @@ select {
   max-width: 42rem;
 }
 
+.hero-text b {
+  color: darkgray;
+}
+
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
