@@ -151,6 +151,14 @@ select {
   opacity: 0.8;
 }
 
+.card h3 a svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  opacity: 0.8;
+  vertical-align: middle;
+}
+
 .primary {
   background: #4338ca;
   color: #fff;
