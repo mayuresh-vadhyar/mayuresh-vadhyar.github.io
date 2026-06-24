@@ -141,14 +141,9 @@ select {
 }
 
 .card h3 a {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   gap: 0.5rem;
-}
-
-.project-link-icon {
-  font-size: 0.95rem;
-  opacity: 0.8;
 }
 
 .card h3 a svg {
