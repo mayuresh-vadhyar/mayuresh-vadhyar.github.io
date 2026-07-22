@@ -301,27 +301,6 @@ select {
   height: 50px;
 }
 
-.tooltip-icon {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.45rem;
-  height: 1.45rem;
-  font-size: 0.95rem;
-  border-radius: 50%;
-  background: rgba(148, 163, 184, 0.12);
-  color: #cbd5e1;
-  cursor: help;
-  border: 1px solid rgba(148, 163, 184, 0.18);
-}
-
-.tooltip-icon:hover,
-.tooltip-icon:focus-visible {
-  background: rgba(148, 163, 184, 0.18);
-  outline: none;
-}
-
 .tooltip-text {
   position: absolute;
   left: 50%;
@@ -353,11 +332,51 @@ select {
   border-top-color: rgba(15, 23, 42, 0.98);
 }
 
-.tooltip-icon:hover .tooltip-text,
-.tooltip-icon:focus-within .tooltip-text {
-  opacity: 1;
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Base style for the tooltip box (hidden by default) */
+.tooltip-container .tooltip-text {
+  visibility: hidden;
+  width: 160px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  
+  /* Positioning the box right above the icon */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; 
+  left: 0px;
+  transform: translateX(-50%);
+  
+  /* Fade-in effect */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Little triangle pointer at the bottom of the tooltip */
+.tooltip-container .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 138px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Reveal the tooltip box on hover */
+.tooltip-container:hover .tooltip-text {
   visibility: visible;
-  transform: translateX(-50%) translateY(0);
+  opacity: 1;
 }
 
 .role {
