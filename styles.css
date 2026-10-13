@@ -154,6 +154,14 @@ select {
   vertical-align: middle;
 }
 
+h2 a svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  opacity: 0.8;
+  vertical-align: middle;
+}
+
 .primary {
   background: #4338ca;
   color: #fff;
@@ -426,6 +434,10 @@ select {
   border-radius: 999px;
   text-align: center;
   font-weight: 600;
+}
+
+.github-contributions-chart {
+  width: 100%;
 }
 
 .profile-grid {
